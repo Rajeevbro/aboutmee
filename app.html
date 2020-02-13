@@ -1,1 +1,60 @@
+<!doctype html>
 
+<html>
+
+<head>
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+</head>
+<main>
+
+    <body>
+        <section>
+            <nav class="navbar navbar-dark bg-primary">
+                <div class="wrapper">
+                    <a href="index.html"><button type="button" class="btn btn-raised btn-success">Home</button></a>
+                    <a href="test2.html"><button type="button"
+                            class="btn btn-raised btn-success">application</button></a>
+                    <a href="Contact.html"><button type="button"
+                            class="btn btn-raised btn-success">Contactinfo</button></a>
+                </div>
+
+
+            </nav>
+
+
+            <head>
+
+            <body>
+                <p>
+                    <label>Fahrenheit</label>
+                    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                        oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+                </p>
+                <p>Celsius: <span id="outputCelsius"></span></p>
+                </head>
+                <script>
+                    function temperatureConverter(valNum) {
+                        valNum = parseFloat(valNum);
+                        document.getElementById("outputCelsius").innerHTML = (valNum - 32) / 1.8;
+                    }</script>
+        </section>
+        <hr width="100%" size="400">
+
+    </body>
+
+
+</main>
+
+
+<footer> &copy; 2020 Rajeev chapagain</footer>
+</body>
+
+
+
+
+
+
+
+</html>
